@@ -2,9 +2,9 @@ import express from 'express';
 import path from 'path';
 import { createServer as createViteServer } from 'vite';
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwS_z715hZVVeojRG4MwcLBmd5V6u1aLTB_fBiurW-xv1kcTTexbbnxCqzD7ha5l2Cbg/exec';
-const SPREADSHEET_ID = '1nyJOrhEA_ZIOrBf_yi5860agM0IE45-b1gVK6sFaiwQ';
-const API_KEY = process.env.GOOGLE_SHEETS_API_KEY || 'AIzaSyBXjkOAtcwi5KbV9Rvvu6ErTgKV7U8PZsc';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxbIKPqi4H9nPDj4nCyrySz-AOGw_gUTHJepi2d29Jfz7O5KeUUSGtHkDrp8uG89-Nm/exec';
+const SPREADSHEET_ID = '1azFGJBSacPEhZk_kf5-PIxLnSpPs38PKZTYpkiius88';
+const API_KEY = process.env.GOOGLE_SHEETS_API_KEY || 'AIzaSyBWQxxRJl0Vz9pX0pmbqeELL_tzeSABf7g';
 
 async function startServer() {
   const app = express();

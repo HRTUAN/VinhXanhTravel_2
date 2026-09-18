@@ -1,10 +1,10 @@
 
 import { UserData, RegisterResponse, SpinResponse, SetupData, CheckPrizeResponse, SecretSheetData } from '../types';
 
-// Thông tin cấu hình
-const API_KEY = 'AIzaSyBXjkOAtcwi5KbV9Rvvu6ErTgKV7U8PZsc';
-const SPREADSHEET_ID = '1nyJOrhEA_ZIOrBf_yi5860agM0IE45-b1gVK6sFaiwQ';
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwS_z715hZVVeojRG4MwcLBmd5V6u1aLTB_fBiurW-xv1kcTTexbbnxCqzD7ha5l2Cbg/exec';
+// Thông tin cấu hình, tuantq.utc@gmail
+const API_KEY = 'AIzaSyBWQxxRJl0Vz9pX0pmbqeELL_tzeSABf7g';
+const SPREADSHEET_ID = '1azFGJBSacPEhZk_kf5-PIxLnSpPs38PKZTYpkiius88';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxbIKPqi4H9nPDj4nCyrySz-AOGw_gUTHJepi2d29Jfz7O5KeUUSGtHkDrp8uG89-Nm/exec';
 
 /**
  * Hàm gọi Apps Script (Ưu tiên proxy server-side để tránh lỗi CORS/Iframe, có fallback trực tiếp)
