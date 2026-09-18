@@ -21,7 +21,8 @@ const RegistrationForm: React.FC<Props> = ({ onSubmit, isLoading, serverError, o
     location: '',
     date: '',
     returnDate: '',
-    pax: '1'
+    pax: '1',
+    code_booking: ''
   });
 
   const [locations, setLocations] = useState<string[]>([]);
@@ -86,7 +87,8 @@ const RegistrationForm: React.FC<Props> = ({ onSubmit, isLoading, serverError, o
     if (validate()) {
       onSubmit({
         ...formData,
-        pax: parseInt(formData.pax)
+        pax: parseInt(formData.pax),
+        code_booking: formData.code_booking.trim()
       });
     }
   };
@@ -239,6 +241,18 @@ const RegistrationForm: React.FC<Props> = ({ onSubmit, isLoading, serverError, o
             onChange={(e) => setFormData({ ...formData, pax: e.target.value })}
           />
           {errors.pax && <p className="text-red-500 text-[0.65rem] mt-1 font-bold ml-1">{errors.pax}</p>}
+        </div>
+
+        <div>
+          <label className={labelClass}>Mã booking</label>
+          <input
+            type="text"
+            disabled={isLoading}
+            className={`${baseInputClass} border-slate-300 focus:border-blue-500`}
+            placeholder="Nhập mã booking"
+            value={formData.code_booking}
+            onChange={(e) => setFormData({ ...formData, code_booking: e.target.value })}
+          />
         </div>
 
         <div className="space-y-3 pt-3">

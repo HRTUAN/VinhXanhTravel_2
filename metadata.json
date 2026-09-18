@@ -2,5 +2,7 @@
   "name": "Travel Lucky Wheel",
   "description": "A vibrant and modern lucky wheel mini-game for travelers to win exciting prizes.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

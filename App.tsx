@@ -7,7 +7,7 @@ import { AppStep, UserData, RegisterResponse, SpinResponse, SetupData } from './
 import { registerUser, spinWheel, getSetupData, recordSecretPrize } from './services/api';
 
 // CHẾ ĐỘ MÔI TRƯỜNG: 'dev' để hiện nút chơi thử, 'prod' để chạy thực tế
-const APP_ENV: 'dev' | 'prod' = 'prod';
+const APP_ENV: string = 'prod';
 
 // Biến toàn cục quyết định chế độ chơi
 const GAME_MODE = 'lucky_wheel' as 'lucky_wheel' | 'lucky_red_envelope';

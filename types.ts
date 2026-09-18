@@ -6,6 +6,7 @@ export interface UserData {
   date: string;
   returnDate: string;
   pax: number;
+  code_booking?: string;
 }
 
 export interface RegisterResponse {
